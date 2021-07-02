@@ -21,9 +21,9 @@ To create it, we use:
          docker-compose exec app php artisan migrate:fresh --seed
          docker-compose exec app php artisan apidoc:generate
     ```
-    These commands will, respectively: update project dependencies, run database migrations and generate API documentation.
-
                      A new php development server will be started in: localhost:8000
+
+    These commands will, respectively: update project dependencies, run database migrations and generate API documentation(localhost:8000/docs to access).
 
 ## External packages and services
 
