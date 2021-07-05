@@ -21,7 +21,6 @@ class UserTransformer extends TransformerAbstract
             'email' => (string)$user->email,
             'birth_date' => (string)$user->email,
             'profile_id' => (int) $user->profile_id,
-            'profile' => $user->profile->transform()
         ];
     }
 }
