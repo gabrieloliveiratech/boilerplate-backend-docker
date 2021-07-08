@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>API Reference</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/all.js"></script>
+    <link rel="stylesheet" href="{{ asset('/docs/css/style.css') }}" />
+    <script src="{{ asset('/docs/js/all.js') }}"></script>
 
 
           <script>
@@ -21,11 +21,11 @@
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" />
+        <img src="/docs/images/navbar.png" />
       </span>
     </a>
     <div class="tocify-wrapper">
-        <img src="images/logo.png" />
+        <img src="/docs/images/logo.png" />
                     <div class="lang-selector">
                                   <a href="#" data-language-name="bash">bash</a>
                                   <a href="#" data-language-name="javascript">javascript</a>
@@ -45,8 +45,7 @@
       <div class="content">
           <!-- START_INFO -->
 <h1>Info</h1>
-<p>Welcome to the generated API reference.
-<a href="http://localhost/docs/collection.json">Get Postman Collection</a></p>
+<p>Welcome to the generated API reference.</p>
 <!-- END_INFO -->
 <h1>Auth</h1>
 <p>APIs for managing Authentication</p>
@@ -59,7 +58,7 @@
     "http://localhost/api/auth/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"occaecati","password":"sed"}'
+    -d '{"email":"alias","password":"excepturi"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/auth/login"
@@ -71,8 +70,8 @@ let headers = {
 };
 
 let body = {
-    "email": "occaecati",
-    "password": "sed"
+    "email": "alias",
+    "password": "excepturi"
 }
 
 fetch(url, {
@@ -87,10 +86,10 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Shirley Jakubowski II",
-        "username": "zelda35",
-        "email": "casimer.barton@abbott.com",
-        "birth_date": "casimer.barton@abbott.com",
+        "name": "Enid Kulas Jr.",
+        "username": "gswift",
+        "email": "nelle35@marquardt.biz",
+        "birth_date": "nelle35@marquardt.biz",
         "profile_id": 0
     }
 }</code></pre>
@@ -205,10 +204,10 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Prof. Daphnee Bergstrom",
-        "username": "muhammad.gerhold",
-        "email": "sabryna60@yahoo.com",
-        "birth_date": "sabryna60@yahoo.com",
+        "name": "Darrin Doyle",
+        "username": "ledner.unique",
+        "email": "muller.destiny@yahoo.com",
+        "birth_date": "muller.destiny@yahoo.com",
         "profile_id": 0
     }
 }</code></pre>
@@ -244,10 +243,10 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Dr. Cesar Kohler Sr.",
-        "username": "lledner",
-        "email": "price33@gmail.com",
-        "birth_date": "price33@gmail.com",
+        "name": "Alessandra Rodriguez IV",
+        "username": "connelly.anna",
+        "email": "usatterfield@gmail.com",
+        "birth_date": "usatterfield@gmail.com",
         "profile_id": 0
     }
 }</code></pre>
@@ -262,7 +261,7 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost/api/users?name=maxime" \
+    -G "http://localhost/api/users?name=corrupti" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
@@ -270,7 +269,7 @@ fetch(url, {
 );
 
 let params = {
-    "name": "maxime",
+    "name": "corrupti",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -292,17 +291,17 @@ fetch(url, {
 <pre><code class="language-json">{
     "data": [
         {
-            "name": "Ross Turner",
-            "username": "corwin.mayra",
-            "email": "ehudson@hand.com",
-            "birth_date": "ehudson@hand.com",
+            "name": "Isai Kuphal",
+            "username": "callie.douglas",
+            "email": "jdibbert@hotmail.com",
+            "birth_date": "jdibbert@hotmail.com",
             "profile_id": 0
         },
         {
-            "name": "Jonatan Crist",
-            "username": "jerde.alden",
-            "email": "ehammes@casper.com",
-            "birth_date": "ehammes@casper.com",
+            "name": "Zora Koepp",
+            "username": "talon51",
+            "email": "dvandervort@gmail.com",
+            "birth_date": "dvandervort@gmail.com",
             "profile_id": 0
         }
     ]
@@ -383,10 +382,10 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Anna Gottlieb",
-        "username": "feil.avis",
-        "email": "balistreri.joey@gmail.com",
-        "birth_date": "balistreri.joey@gmail.com",
+        "name": "Cole Langosh",
+        "username": "alexander20",
+        "email": "lilliana13@roob.com",
+        "birth_date": "lilliana13@roob.com",
         "profile_id": 0
     }
 }</code></pre>
@@ -402,7 +401,7 @@ fetch(url, {
     "http://localhost/api/users/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"aut"}'
+    -d '{"password":"consequuntur"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/users/1"
@@ -414,7 +413,7 @@ let headers = {
 };
 
 let body = {
-    "password": "aut"
+    "password": "consequuntur"
 }
 
 fetch(url, {

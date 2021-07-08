@@ -14,7 +14,7 @@
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
-        "mpociot/laravel-apidoc-generator": "^4.8",
+        "mpociot/laravel-apidoc-generator": "^4.0",
         "spatie/laravel-fractal": "^5.8",
         "tucker-eric/eloquentfilter": "^3.0",
         "tymon/jwt-auth": "^1.0"

@@ -16,7 +16,6 @@ toc_footers:
 # Info
 
 Welcome to the generated API reference.
-[Get Postman Collection](http://localhost/docs/collection.json)
 
 <!-- END_INFO -->
 
@@ -34,7 +33,7 @@ curl -X POST \
     "http://localhost/api/auth/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"corporis","password":"qui"}'
+    -d '{"email":"alias","password":"excepturi"}'
 
 ```
 
@@ -49,8 +48,8 @@ let headers = {
 };
 
 let body = {
-    "email": "corporis",
-    "password": "qui"
+    "email": "alias",
+    "password": "excepturi"
 }
 
 fetch(url, {
@@ -63,6 +62,19 @@ fetch(url, {
 ```
 
 
+> Example response (200):
+
+```json
+{
+    "data": {
+        "name": "Enid Kulas Jr.",
+        "username": "gswift",
+        "email": "nelle35@marquardt.biz",
+        "birth_date": "nelle35@marquardt.biz",
+        "profile_id": 0
+    }
+}
+```
 
 ### HTTP Request
 `POST api/auth/login`
@@ -182,6 +194,19 @@ fetch(url, {
 ```
 
 
+> Example response (200):
+
+```json
+{
+    "data": {
+        "name": "Darrin Doyle",
+        "username": "ledner.unique",
+        "email": "muller.destiny@yahoo.com",
+        "birth_date": "muller.destiny@yahoo.com",
+        "profile_id": 0
+    }
+}
+```
 
 ### HTTP Request
 `POST api/auth/me`
@@ -220,6 +245,19 @@ fetch(url, {
 ```
 
 
+> Example response (200):
+
+```json
+{
+    "data": {
+        "name": "Alessandra Rodriguez IV",
+        "username": "connelly.anna",
+        "email": "usatterfield@gmail.com",
+        "birth_date": "usatterfield@gmail.com",
+        "profile_id": 0
+    }
+}
+```
 
 ### HTTP Request
 `POST api/auth/signup`
@@ -238,7 +276,7 @@ APIs for managing users
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/users?name=sit" \
+    -G "http://localhost/api/users?name=corrupti" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
@@ -249,7 +287,7 @@ const url = new URL(
 );
 
 let params = {
-    "name": "sit",
+    "name": "corrupti",
 };
 Object.keys(params)
     .forEach(key => url.searchParams.append(key, params[key]));
@@ -268,12 +306,26 @@ fetch(url, {
 ```
 
 
-> Example response (401):
+> Example response (200):
 
 ```json
 {
-    "errCode": 401,
-    "error": "Por favor, realize o login."
+    "data": [
+        {
+            "name": "Isai Kuphal",
+            "username": "callie.douglas",
+            "email": "jdibbert@hotmail.com",
+            "birth_date": "jdibbert@hotmail.com",
+            "profile_id": 0
+        },
+        {
+            "name": "Zora Koepp",
+            "username": "talon51",
+            "email": "dvandervort@gmail.com",
+            "birth_date": "dvandervort@gmail.com",
+            "profile_id": 0
+        }
+    ]
 }
 ```
 
@@ -357,12 +409,17 @@ fetch(url, {
 ```
 
 
-> Example response (401):
+> Example response (200):
 
 ```json
 {
-    "errCode": 401,
-    "error": "Por favor, realize o login."
+    "data": {
+        "name": "Cole Langosh",
+        "username": "alexander20",
+        "email": "lilliana13@roob.com",
+        "birth_date": "lilliana13@roob.com",
+        "profile_id": 0
+    }
 }
 ```
 
@@ -382,7 +439,7 @@ curl -X PUT \
     "http://localhost/api/users/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"nobis"}'
+    -d '{"password":"consequuntur"}'
 
 ```
 
@@ -397,7 +454,7 @@ let headers = {
 };
 
 let body = {
-    "password": "nobis"
+    "password": "consequuntur"
 }
 
 fetch(url, {

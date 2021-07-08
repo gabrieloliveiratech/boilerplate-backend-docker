@@ -2,7 +2,7 @@
     "variables": [],
     "info": {
         "name": "Laravel API",
-        "_postman_id": "4cbd4e2e-78ef-4d4e-bf50-88e6bd2f8aaf",
+        "_postman_id": "d8577c90-e0ff-4aab-a7b8-136ede7c3052",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
     },
@@ -33,7 +33,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"corporis\",\n    \"password\": \"qui\"\n}"
+                            "raw": "{\n    \"email\": \"occaecati\",\n    \"password\": \"sed\"\n}"
                         },
                         "description": "",
                         "response": []
@@ -167,7 +167,7 @@
                             "query": [
                                 {
                                     "key": "name",
-                                    "value": "sit",
+                                    "value": "maxime",
                                     "description": "string The name of the user.",
                                     "disabled": false
                                 }
@@ -270,7 +270,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"password\": \"nobis\"\n}"
+                            "raw": "{\n    \"password\": \"aut\"\n}"
                         },
                         "description": "",
                         "response": []
