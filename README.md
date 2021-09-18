@@ -14,6 +14,7 @@ To create it, we use:
 ## Get Started
 
 - Make a git clone of the project
+- Copy a .env.example and rename to .env
 - Up the containers in Docker.
 - Run the following commands from a terminal:
     ```sh
