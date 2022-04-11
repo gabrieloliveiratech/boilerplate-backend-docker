@@ -19,6 +19,7 @@ To create it, we use:
 - Run the following commands from a terminal:
     ```sh
          docker-compose exec app composer install
+         docker-compose exec app php artisan key:generate
          docker-compose exec app php artisan migrate:fresh --seed
          docker-compose exec app php artisan apidoc:generate
     ```
